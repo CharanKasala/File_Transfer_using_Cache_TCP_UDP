@@ -113,10 +113,6 @@ visual representation of Delay for TCP vs UDP is:
 
 ![Delay](https://github.com/CharanKasala/File_Transfer_using_Cache_TCP_UDP/blob/main/Delay.png)
 
-visual representation of Throughput for TCP vs UDP is: 
-
-![Throughput](https://github.com/CharanKasala/File_Transfer_using_Cache_TCP_UDP/blob/main/Throughput.png)
-
 Throughput (in bits per second)
 
 | File               | TCP (bps)         | SNW (bps)          |
@@ -125,6 +121,10 @@ Throughput (in bits per second)
 | **file2.txt (32KB)** | 7,854,315.123     | 2,246,906.822      |
 | **file3.txt (48KB)** | 11,194,233        | 2,073,680          |
 | **file4.txt (62KB)** | 13,755,221.12     | 2,148,628.771      |
+
+visual representation of Throughput for TCP vs UDP is: 
+
+![Throughput](https://github.com/CharanKasala/File_Transfer_using_Cache_TCP_UDP/blob/main/Throughput.png)
 
 
 <ins>**Instructions to execute:**</ins>
