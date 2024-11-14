@@ -151,7 +151,7 @@ The <protocol> can be either tcp or snw but it should be the same  one selected 
 This will start the client.
 Connects to the server using <server_ip> and <server_port>.
 Connects to the cache using <cache_ip> and <cache_port>.
-The <protocol> can be either tcp or snw but it should be the same one selected while running the server.
+The `<protocol>` can be either tcp or snw but it should be the same one selected while running the server.
 
 7. **Upload a file to the server:** Use the put command to upload a file from the client to the server.
 
