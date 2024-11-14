@@ -62,18 +62,36 @@ The system uses TCP to ensure reliable communication. TCP's built-in mechanisms,
 
 The Stop-and-Wait protocol is implemented over UDP to offer a simpler, lightweight transport layer. Custom reliability is achieved through acknowledgment (ACK) messages and timeouts. If a packet is lost or not acknowledged within a certain time frame, the packet is retransmitted, ensuring reliable data transmission over an inherently unreliable protocol like UDP
 
+**Tech Stack :**
+
+Programming Languages: Python
+
+**Transport Protocols:**
+
+TCP
+UDP (Stop-and-Wait). 
+
+A custom cache implementation is used for storing files locally. The cache helps reduce server load by serving files from local storage when available, improving the overall efficiency of the file transfer process
+
+
+**Wireshark:**
+Wireshark is used for packet analysis and performance evaluation. It helps capture network traffic, analyze delays, and measure throughput during the file transfer tests.
+
 **Performance Testing**
 
-The project includes performance testing to evaluate the efficiency of the file transfer system under different transport protocols (TCP and SNW). Wireshark is used to capture and analyze packet exchanges, allowing for a detailed assessment of delay and throughput. The testing aims to compare how each protocol performs in terms of data transfer speed and reliability for different file sizes.
+The project includes performance testing to evaluate the efficiency of the file transfer system under different transport protocols (TCP and SNW). **Wireshark** is used to capture and analyze packet exchanges, allowing for a detailed assessment of delay and throughput. The testing aims to compare how each protocol performs in terms of data transfer speed and reliability for different file sizes.
 
 The following files are used in the performance tests:
 
 file1.txt (16KB)
+
 file2.txt (32KB)
+
 file3.txt (48KB)
+
 file4.txt (62KB)
 
-Wireshark captures the network traffic during the upload and download operations for each file, providing insights into the protocol's performance. Key metrics such as transmission delay, packet loss, throughput, and retransmission rates are analyzed to compare the effectiveness of TCP and Stop-and-Wait protocols under varying network conditions.
+The results from the performance testing are displayed in the tables below, highlighting the differences between TCP and SNW protocols in terms of delay and throughput for different file sizes.
 
 Delay (in seconds)
 | File               | TCP (sec)  | SNW (sec)  |
@@ -91,3 +109,4 @@ Throughput (in bits per second)
 | **file2.txt (32KB)** | 7,854,315.123     | 2,246,906.822      |
 | **file3.txt (48KB)** | 11,194,233        | 2,073,680          |
 | **file4.txt (62KB)** | 13,755,221.12     | 2,148,628.771      |
+
