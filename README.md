@@ -30,6 +30,12 @@ The system supports both TCP (for reliable transmission) and the Stop-and-Wait p
 
 The Stop-and-Wait protocol includes a timeout feature to handle packet loss, ensuring reliable transmission even in less stable networks.
 
+**Architecture Design**
+
+The following image visually represents the interaction between client ,server and cache
+
+
+![Archtecture design of project](https://github.com/CharanKasala/File_Transfer_using_Cache_TCP_UDP/blob/main/Architecture_Design.jpeg)
 
 <ins>**Instructions:**</ins>
 
@@ -56,9 +62,32 @@ The system uses TCP to ensure reliable communication. TCP's built-in mechanisms,
 
 The Stop-and-Wait protocol is implemented over UDP to offer a simpler, lightweight transport layer. Custom reliability is achieved through acknowledgment (ACK) messages and timeouts. If a packet is lost or not acknowledged within a certain time frame, the packet is retransmitted, ensuring reliable data transmission over an inherently unreliable protocol like UDP
 
-**Architecture Design**
+**Performance Testing**
 
-The following image visually represents the interaction between client ,server and cache
+The project includes performance testing to evaluate the efficiency of the file transfer system under different transport protocols (TCP and SNW). Wireshark is used to capture and analyze packet exchanges, allowing for a detailed assessment of delay and throughput. The testing aims to compare how each protocol performs in terms of data transfer speed and reliability for different file sizes.
 
+The following files are used in the performance tests:
 
-![Archtecture design of project](https://github.com/CharanKasala/File_Transfer_using_Cache_TCP_UDP/blob/main/Architecture_Design.jpeg)
+file1.txt (16KB)
+file2.txt (32KB)
+file3.txt (48KB)
+file4.txt (62KB)
+
+Wireshark captures the network traffic during the upload and download operations for each file, providing insights into the protocol's performance. Key metrics such as transmission delay, packet loss, throughput, and retransmission rates are analyzed to compare the effectiveness of TCP and Stop-and-Wait protocols under varying network conditions.
+
+Delay (in seconds)
+| File               | TCP (sec)  | SNW (sec)  |
+|--------------------|------------|------------|
+| **file1.txt (16KB)** | 0.008134   | 0.060079   |
+| **file2.txt (32KB)** | 0.030312   | 0.105959   |
+| **file3.txt (48KB)** | 0.031905   | 0.172231   |
+| **file4.txt (62KB)** | 0.034619   | 0.221626   |
+
+Throughput (in bits per second)
+
+| File               | TCP (bps)         | SNW (bps)          |
+|--------------------|-------------------|--------------------|
+| **file1.txt (16KB)** | 14,634,866        | 1,981,391          |
+| **file2.txt (32KB)** | 7,854,315.123     | 2,246,906.822      |
+| **file3.txt (48KB)** | 11,194,233        | 2,073,680          |
+| **file4.txt (62KB)** | 13,755,221.12     | 2,148,628.771      |
