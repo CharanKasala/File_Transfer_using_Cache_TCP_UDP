@@ -55,3 +55,10 @@ The system uses TCP to ensure reliable communication. TCP's built-in mechanisms,
 **SNW Protocol (Stop-and-Wait) over UDP:**
 
 The Stop-and-Wait protocol is implemented over UDP to offer a simpler, lightweight transport layer. Custom reliability is achieved through acknowledgment (ACK) messages and timeouts. If a packet is lost or not acknowledged within a certain time frame, the packet is retransmitted, ensuring reliable data transmission over an inherently unreliable protocol like UDP
+
+**Architecture Design**
+
+The following image visually represents the interaction between client ,server and cache
+
+
+![Archtecture design of project](https://github.com/CharanKasala/File_Transfer_using_Cache_TCP_UDP/blob/main/Architecture_Design.jpeg)
