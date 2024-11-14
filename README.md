@@ -119,33 +119,33 @@ Throughput (in bits per second)
 
 1. Clone the repository:
 
-    git clone <repository-url>
+        git clone <repository-url>
 
 2. Navigate to the project directory:
 
-    cd <project-directory>
+        cd <project-directory>
 
 3.** Run the server:** The server is responsible for storing and serving the files.
 
-    python server.py <port> <protocol>
+        python server.py <port> <protocol>
 
 4. **Run the cache:** The cache stores files locally to improve performance by reducing server load.
 
-    python cache.py <port> <server_ip> <server_port> <protocol>
+        python cache.py <port> <server_ip> <server_port> <protocol>
 
 5. **Run the client:** The client uploads and downloads files, interacting with both the cache and the server.
 
-    python client.py <server_ip> <server_port> <cache_ip> <cache_port> <protocol>
+        python client.py <server_ip> <server_port> <cache_ip> <cache_port> <protocol>
 
 6. **Upload a file to the server:** Use the put command to upload a file from the client to the server.
 
-    put <file_path>
+        put <file_path>
 
 7.**Download a file from the cache or server:** Use the get command to download a file. The system first checks the cache, and if the 
     file is not there, it fetches it from the server.
 
-    get <file_path
+        get <file_path
 
 8.**Quit the program:** Exit the program and terminate the server, cache, and client processes.
 
-    quit
+        quit
