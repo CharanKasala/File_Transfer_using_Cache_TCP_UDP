@@ -129,15 +129,22 @@ Throughput (in bits per second)
 
         python server.py <port> <protocol>
 
+This will Start the server on the specified port.
+The <protocol> can be either tcp or snw (stop-and-wait).
+
 4. **Run the cache:** The cache stores files locally to improve performance by reducing server load.
 
         python cache.py <port> <server_ip> <server_port> <protocol>
+   
+This will Start the cache on the specified <port>.
+Connects to the server using the provided <server_ip> and <server_port>.
+The <protocol> can be either tcp or snw but it should be the same selected in the server.
 
-5. **Run the client:** The client uploads and downloads files, interacting with both the cache and the server.
+6. **Run the client:** The client uploads and downloads files, interacting with both the cache and the server.
 
         python client.py <server_ip> <server_port> <cache_ip> <cache_port> <protocol>
 
-6. **Upload a file to the server:** Use the put command to upload a file from the client to the server.
+7. **Upload a file to the server:** Use the put command to upload a file from the client to the server.
 
         put <file_path>
 
