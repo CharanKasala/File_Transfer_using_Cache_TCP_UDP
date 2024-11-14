@@ -125,7 +125,7 @@ Throughput (in bits per second)
 
         cd <project-directory>
 
-3.** Run the server:** The server is responsible for storing and serving the files.
+3.**Run the server:** The server is responsible for storing and serving the files.
 
         python server.py <port> <protocol>
 
@@ -138,11 +138,16 @@ The <protocol> can be either tcp or snw (stop-and-wait).
    
 This will Start the cache on the specified <port>.
 Connects to the server using the provided <server_ip> and <server_port>.
-The <protocol> can be either tcp or snw but it should be the same selected in the server.
+The <protocol> can be either tcp or snw but it should be the same  one selected while running the server..
 
-6. **Run the client:** The client uploads and downloads files, interacting with both the cache and the server.
+5. **Run the client:** The client uploads and downloads files, interacting with both the cache and the server.
 
         python client.py <server_ip> <server_port> <cache_ip> <cache_port> <protocol>
+   
+This will start the client.
+Connects to the server using <server_ip> and <server_port>.
+Connects to the cache using <cache_ip> and <cache_port>.
+The <protocol> can be either tcp or snw but it should be the same one selected while running the server.
 
 7. **Upload a file to the server:** Use the put command to upload a file from the client to the server.
 
@@ -151,7 +156,7 @@ The <protocol> can be either tcp or snw but it should be the same selected in th
 7.**Download a file from the cache or server:** Use the get command to download a file. The system first checks the cache, and if the 
     file is not there, it fetches it from the server.
 
-        get <file_path
+        get <file_path>
 
 8.**Quit the program:** Exit the program and terminate the server, cache, and client processes.
 
