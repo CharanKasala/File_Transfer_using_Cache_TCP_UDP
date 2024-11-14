@@ -119,7 +119,7 @@ Throughput (in bits per second)
 | **file4.txt (62KB)** | 13,755,221.12     | 2,148,628.771      |
 
 
-<ins>**Instructions:**</ins>
+<ins>**Instructions to execute:**</ins>
 
 1. Clone the repository:
 
