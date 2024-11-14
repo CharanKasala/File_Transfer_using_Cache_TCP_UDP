@@ -6,6 +6,7 @@ The goal of this project is to develop a cache-enabled file transfer system that
 The objective of this project is to develop a cache-enabled file transfer system that manages file uploads and downloads between the client, cache, and server. The system first checks if the requested file is cached locally. If not, it retrieves the file from the server and stores it in the cache for future use. The system supports two transport protocols:
 
 TCP (Transmission Control Protocol)
+
 Stop-and-Wait (SNW) Protocol over UDP
 
 <ins>**Features:**</ins>
@@ -69,7 +70,9 @@ Programming Languages: Python
 **Transport Protocols:**
 
 TCP
+
 UDP (Stop-and-Wait). 
+
 
 A custom cache implementation is used for storing files locally. The cache helps reduce server load by serving files from local storage when available, improving the overall efficiency of the file transfer process
 
