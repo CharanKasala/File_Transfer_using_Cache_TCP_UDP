@@ -67,7 +67,9 @@ The Stop-and-Wait protocol is implemented over UDP to offer a simpler, lightweig
 
 <ins>**Tech Stack :**</ins>
 
-Programming Languages: Python
+**Programming Languages:** 
+
+Python
 
 **Transport Protocols:**
 
