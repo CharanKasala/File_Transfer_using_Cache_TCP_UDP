@@ -43,7 +43,9 @@ The following image visually represents the interaction between client ,server a
 To interact with the file transfer system, the user must enter one of the following commands
 
 **put <file>:** Upload a file from the client to the server.
+
 **get <file>:** Download a file from the cache (if available) or from the server.
+
 **quit:** Exit the program and terminate the connection.
 
 
