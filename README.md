@@ -1,10 +1,5 @@
 This project is cache-enabled file transfer system that manages file uploads and downloads between the client, cache, and server. The system first checks if the requested file is cached locally. If not, it retrieves the file from the server and stores it in the cache for future use. The system supports two transport protocols:
 
-
-**Overview:**
-
-The objective of this project is to develop a cache-enabled file transfer system that manages file uploads and downloads between the client, cache, and server. The system first checks if the requested file is cached locally. If not, it retrieves the file from the server and stores it in the cache for future use. The system supports two transport protocols:
-
 TCP (Transmission Control Protocol)
 
 Stop-and-Wait (SNW) Protocol over UDP
