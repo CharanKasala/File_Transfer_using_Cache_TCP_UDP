@@ -26,7 +26,7 @@ The system supports both TCP (for reliable transmission) and the Stop-and-Wait p
 
 The Stop-and-Wait protocol includes a timeout feature to handle packet loss, ensuring reliable transmission even in less stable networks.
 
-**Architecture Design**
+<ins>**Architecture Design**</ins>
 
 The following image visually represents the interaction between client ,server and cache
 
